@@ -40,5 +40,4 @@ public class StudentTest {
 		Student tester = new Student();
 		assertEquals(Student.AttendanceGrade.ABSENT, tester.getAttendanceGrade(0));
 	}
-
 }
