@@ -12,7 +12,7 @@ public class StudentTest {
 	@Test
 	public void test2() {
 		Student tester = new Student();
-		assertEquals(Student.AttendanceGrade.AVERAGE, tester.getAttendanceGrade(49));
+		assertEquals(Student.AttendanceGrade.AVERAGE, tester.getAttendanceGrade(50));
 	}
 	@Test
 	public void test3() {
@@ -22,7 +22,7 @@ public class StudentTest {
 	@Test
 	public void test4() {
 		Student tester = new Student();
-		assertEquals(Student.AttendanceGrade.VERY_GOOD, tester.getAttendanceGrade(90));
+		assertEquals(Student.AttendanceGrade.VERY_GOOD, tester.getAttendanceGrade(91));
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
@@ -36,7 +36,7 @@ public class StudentTest {
 		tester.getAttendanceGrade(-1);
 	}
 	@Test
-	public void test7() throws Exception {
+	public void test7() {
 		Student tester = new Student();
 		assertEquals(Student.AttendanceGrade.ABSENT, tester.getAttendanceGrade(0));
 	}
